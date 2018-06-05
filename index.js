@@ -19,7 +19,7 @@ function forkRepo() {
     headers: {
       Authorization: 'token 29fe5c75d8b39e72f502dc4719212013e693af3e'
     }
-  })
+  }).then(res => console.log(res))
 }
 
 function getToken() {
