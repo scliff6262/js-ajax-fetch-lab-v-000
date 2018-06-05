@@ -30,7 +30,7 @@ function forkRepo(){
       'Authorization': `token ${getToken()}`
     }
   }).then(resp => console.log(resp))
-  })
+  }
 }
 function getToken() {
   //change to your token to run in browser, but set
