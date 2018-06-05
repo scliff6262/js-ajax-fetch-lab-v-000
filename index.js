@@ -28,8 +28,7 @@ function forkRepo(){
     method: 'post',
     headers: {
       'Authorization': `token ${getToken()}`
-    },
-    mode: "cors"
+    }
   }).then(resp => console.log(resp))
   }
 
