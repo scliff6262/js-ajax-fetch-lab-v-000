@@ -16,7 +16,6 @@ function forkRepo() {
   fetch(`https://api.github.com/repos/${repo}/forks`, {
     method: "POST",
     headers: {
-      "Access-Control-Allow-Credentials": true,
       Authorization: `token ${getToken()}`
     },
     mode: "cors"
