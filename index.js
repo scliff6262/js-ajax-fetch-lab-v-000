@@ -18,7 +18,7 @@ function forkRepo() {
     headers: {
       "Authorization": `token ${getToken()}`
     },
-    type: "cors"
+    mode: "cors"
   }).then(res => console.log(res))
 }
 
