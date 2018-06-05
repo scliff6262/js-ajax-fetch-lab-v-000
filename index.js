@@ -18,7 +18,7 @@ function forkRepo() {
   fetch(apiLink, {
     method: "POST",
     headers: {
-      Authorization: `token ${token}`
+      Authorization: `${token}`
     }
   }).then(res => console.log(res))
 }
