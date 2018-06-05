@@ -23,7 +23,7 @@ function showResults(json) {
 */
 function forkRepo(){
   const baseApi = 'https://api.github.com/'
-  const repo = 'scliff6262/kick_up'
+  const repo = 'learn-co-curriculum/javascript-fetch-lab'
   fetch(`${baseApi}repos/${repo}/forks`, {
     method: 'post',
     headers: {
