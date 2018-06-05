@@ -16,8 +16,9 @@ function forkRepo() {
   fetch(`https://api.github.com/repos/${repo}/forks`, {
     method: "POST",
     headers: {
-      Authorization: `token ${getToken()}`
+      "Authorization": `token ${getToken()}`
     },
+    body: JSON.stringify()
     type: "cors"
   }).then(res => console.log(res))
 }
