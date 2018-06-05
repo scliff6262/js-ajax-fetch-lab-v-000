@@ -21,17 +21,17 @@ function showResults(json) {
   }).then(res => console.log(res))
 }
 */
-function forkRepo() {
-const baseApi = 'https://api.github.com/'
-const repo = 'learn-co-curriculum/javascript-fetch-lab'  
-fetch(`${baseApi}repos/${repo}/forks`, { 
-  method: 'post',
-  headers: { 
-    'Authorization': `token ${getToken()}`
-    } 
-    }).then(resp => { console.log(resp)
+function forkRepo(){
+  const baseApi = 'https://api.github.com/'
+  const repo = 'learn-co-curriculum/javascript-fetch-lab'
+  fetch(`${baseApi}repos/${repo}/forks`, {
+    method: 'post',
+    headers: {
+      'Authorization': `token ${getToken()}`
+    }
+  }).then(resp => console.log(resp))
   })
-  }
+}
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
